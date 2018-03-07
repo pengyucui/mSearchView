@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cuipengyu.msearchview.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/list_re1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/list_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/back_white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_exma_searchview_pressed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/list_back"
+                android:layout_weight="1"
+                android:background="@drawable/exma_listr_searchview_bg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/rl_exma_list_imag"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/exma_listr_searchview_src" />
+
+                <EditText
+                    android:id="@+id/et_exma_searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/rl_exma_list_imag"
+                    android:background="@null"
+                    android:hint="请输入试卷名称"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="1dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/iv_exma_clear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/exma_dialog_mark"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_exma_searchview_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/list_back"
+                android:layout_weight="1"
+                android:background="@drawable/exma_listr_searchview_bg"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/rl_exma_list_imag1"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/exma_listr_searchview_src" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/rl_exma_list_imag1"
+                    android:gravity="center"
+                    android:hint="请输入试卷名称"
+                    android:padding="1dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/searchview_text_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/meun_list"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/list_meun" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

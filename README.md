@@ -1,2 +1,2 @@
 # mSearchView
-仿微信搜索框功能
+简书地址：https://www.jianshu.com/u/87170f7c286b
